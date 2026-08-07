@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- SEO -->
+		<title>Care — Layanan Kesehatan & Home Care Terpercaya</title>
+		<meta
+			name="description"
+			content="Layanan home care kesehatan profesional di rumah Anda. Dokter, perawat, bidan, dan fisioterapi berlisensi siap mendampingi pemulihan keluarga Anda." />
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet" />
+
+		<!-- Tailwind CSS via CDN -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+			  theme: {
+			    extend: {
+			      fontFamily: {
+			        sans: ['Inter', 'sans-serif'],
+			      },
+			      colors: {
+			        brand: {
+			          DEFAULT: '#006671',
+			          dark: '#004243',
+			          light: '#007D7F',
+			          lighter: '#E6F3F3',
+			          darker: '#003333',
+			        }
+			      }
+			    }
+			  }
+			}
+		</script>
+	</head>
+	<body class="font-sans antialiased text-slate-800 bg-white overflow-x-hidden">
+		<!-- ======== NAVBAR ======== -->
+		<header
+			id="navbar"
+			class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md z-50 border-b border-slate-100 transition-all duration-300 transform -translate-y-full">
+			<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+				<!-- Logo -->
+				<a
+					href="#"
+					class="flex items-center gap-2 text-2xl font-extrabold text-brand hover:opacity-95 transition-opacity">
+					<img
+						src="./assets/images/FLYER TEMANI SEHAT 1.png"
+						alt="Care Logo"
+						class="object-contain" />
+				</a>
+
+				<!-- Navigation Menu -->
+				<nav class="hidden md:block">
+					<ul class="flex gap-8 text-sm font-semibold text-slate-600">
+						<li><a href="#home" class="hover:text-brand transition-colors">Home</a></li>
+						<li><a href="#layanan" class="hover:text-brand transition-colors">Layanan kami</a></li>
+						<li><a href="#tentang" class="hover:text-brand transition-colors">Tentang</a></li>
+						<li>
+							<a href="#langkah" class="hover:text-brand transition-colors">Langkah Pemesanan</a>
+						</li>
+						<li><a href="#dokter" class="hover:text-brand transition-colors">Tim Medis</a></li>
+						<li><a href="#testimoni" class="hover:text-brand transition-colors">FAQ</a></li>
+					</ul>
+				</nav>
+
+				<!-- CTA Button & Mobile Menu Toggle -->
+				<div class="flex items-center gap-4">
+					<a
+						href="https://wa.me/6281234567890"
+						class="hidden sm:inline-flex items-center justify-center bg-brand hover:bg-brand-dark text-white text-sm font-bold px-6 py-2.5 rounded-full transition-all duration-300 hover:shadow-lg"
+						target="_blank"
+						>Hubungi Whatsapp</a
+					>
+					<button
+						class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-slate-50 text-slate-800"
+						id="mobile-toggle"
+						aria-label="Buka Menu">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							stroke-width="2">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<!-- Mobile Navigation Overlay -->
+			<ul
+				class="absolute top-20 left-0 right-0 bg-white border-b border-slate-100 shadow-xl p-6 flex flex-col gap-4 list-none z-40 transition-all duration-300 origin-top transform scale-y-0 opacity-0 pointer-events-none"
+				id="mobile-menu">
+				<li>
+					<a href="#home" class="block font-semibold text-slate-700 hover:text-brand">Home</a>
+				</li>
+				<li>
+					<a href="#layanan" class="block font-semibold text-slate-700 hover:text-brand"
+						>Layanan kami</a
+					>
+				</li>
+				<li>
+					<a href="#tentang" class="block font-semibold text-slate-700 hover:text-brand">Tentang</a>
+				</li>
+				<li>
+					<a href="#langkah" class="block font-semibold text-slate-700 hover:text-brand"
+						>Langkah Pemesanan</a
+					>
+				</li>
+				<li>
+					<a href="#dokter" class="block font-semibold text-slate-700 hover:text-brand"
+						>Tim Medis</a
+					>
+				</li>
+				<li>
+					<a href="#testimoni" class="block font-semibold text-slate-700 hover:text-brand">FAQ</a>
+				</li>
+				<li>
+					<a
+						href="https://wa.me/6281234567890"
+						class="block bg-brand hover:bg-brand-dark text-white text-center font-bold py-3 rounded-full transition-all"
+						target="_blank"
+						>Hubungi Whatsapp</a
+					>
+				</li>
+			</ul>
+		</header>
+
+		<!-- ======== HERO BANNER ======== -->
+		<section id="home" class="pt-20 pb-0 bg-white">
+			<div class="max-w-[1440px] mx-auto px-4 overflow-hidden">
+				<div class="relative rounded-b-[24px] overflow-hidden shadow-lg">
+					<img
+						src="./assets/images/20c97dd52406d84f7dd73f10030d25c4dba3332f.jpg"
+						alt="Care Banner"
+						id="hero-image"
+						class="w-full h-[300px] md:h-[450px] lg:h-[650px] object-cover opacity-0 scale-95 object-bottom" />
+					<!-- White Vignette (Inset Shadow Overlay) -->
+					<div class="absolute inset-0 pointer-events-none shadow-[inset_0_0_60px_rgba(255,255,255,0.65)] sm:shadow-[inset_0_0_100px_rgba(255,255,255,0.8)] md:shadow-[inset_0_0_150px_rgba(255,255,255,0.9)]"></div>
+					<!-- Soft bottom white gradient to blend out the bottom border -->
+					<div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white/40 to-transparent pointer-events-none"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ======== HERO CARDS ======== -->
+		<section id="hero-cards" class="relative z-10 px-6 -mt-16">
+			<div class="max-w-7xl mx-auto">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+					<!-- Card 1 -->
+					<div
+						class="hero-card bg-brand text-white rounded-2xl p-8 shadow-xl opacity-0 transform translate-y-10 hover:-translate-y-1.5 transition-all duration-300">
+						<div class="w-12 h-12 flex items-center justify-center mb-5 text-2xl">
+							<img src="/assets/images/Icon-perawat.svg" alt="" srcset="" />
+						</div>
+						<h3 class="text-lg font-bold mb-2">Tenaga Profesional</h3>
+						<p class="text-sm text-brand-lighter/90 leading-relaxed">
+							Perawat & bidan berlisensi dengan pengalaman klinis resmi.
+						</p>
+					</div>
+					<!-- Card 2 -->
+					<div
+						class="hero-card bg-brand text-white rounded-2xl p-8 shadow-xl opacity-0 transform translate-y-10 hover:-translate-y-1.5 transition-all duration-300">
+						<div class="w-12 h-12 flex items-center justify-center mb-5 text-2xl">
+							<img src="/assets/images/Icon-jam.svg" alt="" srcset="" />
+						</div>
+						<h3 class="text-lg font-bold mb-2">Tersedia 24 Jam</h3>
+						<p class="text-sm text-brand-lighter/90 leading-relaxed">
+							Konsultasi dan layanan kunjungan darurat siap kapan saja.
+						</p>
+					</div>
+					<!-- Card 3 -->
+					<div
+						class="hero-card bg-brand text-white rounded-2xl p-8 shadow-xl opacity-0 transform translate-y-10 hover:-translate-y-1.5 transition-all duration-300">
+						<div class="w-12 h-12 flex items-center justify-center mb-5 text-2xl">
+							<img src="/assets/images/Icon-tas-medis.svg" alt="" srcset="" />
+						</div>
+						<h3 class="text-lg font-bold mb-2">Respon Cepat</h3>
+						<p class="text-sm text-brand-lighter/90 leading-relaxed">
+							Penanganan cepat oleh tim terdekat langsung dari lokasi Anda.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ======== TENTANG KAMI ======== -->
+		<section id="tentang" class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<!-- Left side: Image -->
+				<div id="about-img-box" class="opacity-0 transform -translate-x-12">
+					<img
+						src="./assets/images/Rectangle 7.png"
+						alt="Pemeriksaan Kesehatan"
+						class="w-full rounded-2xl shadow-xl border border-slate-100" />
+				</div>
+
+				<!-- Right side: Content -->
+				<div id="about-text-box" class="opacity-0 transform translate-x-12">
+					<span
+						class="inline-block bg-brand text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4"
+						>Tentang Kami</span
+					>
+					<h2 class="text-3xl md:text-4xl font-extrabold text-brand-darker leading-tight mb-4">
+						Kesehatan Lebih Mudah Dijalani Kalau Ada Yang Menemani.
+					</h2>
+					<p class="text-slate-600 mb-8 leading-relaxed">
+						Kami hadir untuk mendampingi masa pemulihan Anda dan keluarga secara profesional di
+						rumah. Layanan yang mengutamakan kenyamanan, keamanan, dan kasih sayang bagi setiap
+						pasien.
+					</p>
+					<a
+						href="https://wa.me/6281234567890"
+						class="inline-flex items-center justify-center bg-brand hover:bg-brand-dark text-white font-bold px-8 py-3.5 rounded-full transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
+						target="_blank"
+						>Hubungi Whatsapp Kami</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<!-- ======== DETAIL PENAWARAN LAYANAN ======== -->
+		<section id="layanan" class="py-24 bg-slate-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<div id="services-header" class="text-center mb-16 opacity-0 transform translate-y-10">
+					<span
+						class="inline-block bg-brand text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4"
+						>Pilih Layanan Kami</span
+					>
+					<h2 class="text-3xl md:text-4xl font-extrabold text-brand-darker">
+						Detail Penawaran Layanan
+					</h2>
+				</div>
+
+				<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+					<!-- Service 1 -->
+					<div
+						class="service-item bg-white rounded-2xl p-8 border border-slate-100 text-center shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 opacity-0 transform translate-y-10">
+						<img
+							src="./assets/images/hero-nurse.jpg"
+							alt="Keperawatan"
+							class="w-[130px] h-[170px] rounded-full object-cover mx-auto mb-6 shadow-md border-2 border-white ring-2 ring-brand-lighter" />
+						<h3 class="text-lg font-bold text-brand-darker mb-2">Keperawatan</h3>
+						<p class="text-xs text-slate-500 leading-relaxed">
+							Perawatan luka, pasca-stroke, infus, dan injeksi medis oleh perawat berpengalaman.
+						</p>
+					</div>
+
+					<!-- Service 2 -->
+					<div
+						class="service-item bg-white rounded-2xl p-8 border border-slate-100 text-center shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 opacity-0 transform translate-y-10">
+						<img
+							src="./assets/images/midwife.jpg"
+							alt="Bidan & Ibu-Anak"
+							class="w-[130px] h-[170px] rounded-full object-cover mx-auto mb-6 shadow-md border-2 border-white ring-2 ring-brand-lighter" />
+						<h3 class="text-lg font-bold text-brand-darker mb-2">Bidan & Ibu-Anak</h3>
+						<p class="text-xs text-slate-500 leading-relaxed">
+							Pendampingan ibu hamil, pasca melahirkan (nifas), serta perawatan bayi baru lahir.
+						</p>
+					</div>
+
+					<!-- Service 3 -->
+					<div
+						class="service-item bg-white rounded-2xl p-8 border border-slate-100 text-center shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 opacity-0 transform translate-y-10">
+						<img
+							src="./assets/images/elderly-therapy.jpg"
+							alt="Fisioterapi"
+							class="w-[130px] h-[170px] rounded-full object-cover mx-auto mb-6 shadow-md border-2 border-white ring-2 ring-brand-lighter" />
+						<h3 class="text-lg font-bold text-brand-darker mb-2">Fisioterapi</h3>
+						<p class="text-xs text-slate-500 leading-relaxed">
+							Terapi fisik pemulihan kemampuan gerak pasca cedera, operasi, atau gejala stroke.
+						</p>
+					</div>
+
+					<!-- Service 4 -->
+					<div
+						class="service-item bg-white rounded-2xl p-8 border border-slate-100 text-center shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 opacity-0 transform translate-y-10">
+						<img
+							src="./assets/images/child-therapy.jpg"
+							alt="Tumbuh Kembang"
+							class="w-[130px] h-[170px] rounded-full object-cover mx-auto mb-6 shadow-md border-2 border-white ring-2 ring-brand-lighter" />
+						<h3 class="text-lg font-bold text-brand-darker mb-2">Tumbuh Kembang</h3>
+						<p class="text-xs text-slate-500 leading-relaxed">
+							Stimulasi motorik anak, sensori integrasi, dan terapi bicara tumbuh kembang.
+						</p>
+					</div>
+
+					<!-- Service 5 (Centered below) -->
+					<div
+						class="service-item bg-white rounded-2xl p-8 border border-slate-100 text-center shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 opacity-0 transform translate-y-10 sm:col-span-2 md:col-span-4 max-w-sm mx-auto w-full">
+						<img
+							src="./assets/images/doctor-consultation.jpg"
+							alt="Rehabilitasi"
+							class="w-[130px] h-[170px] rounded-full object-cover mx-auto mb-6 shadow-md border-2 border-white ring-2 ring-brand-lighter" />
+						<h3 class="text-lg font-bold text-brand-darker mb-2">Rehabilitasi</h3>
+						<p class="text-xs text-slate-500 leading-relaxed">
+							Terapi wicara dan okupasi terpadu untuk segala usia guna mengembalikan kemandirian.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ======== LANGKAH PEMESANAN ======== -->
+		<section id="langkah" class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div id="steps-header" class="text-center mb-16 opacity-0 transform translate-y-10">
+					<span
+						class="inline-block bg-brand text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4"
+						>Langkah Pemesanan</span
+					>
+					<h2 class="text-3xl md:text-4xl font-extrabold text-brand-darker">
+						Detail Langkah Pemesanan
+					</h2>
+				</div>
+
+				<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+					<!-- Step 1 -->
+					<div class="step-item text-center opacity-0 transform translate-y-10">
+						<img
+							src="./assets/images/home-care.jpg"
+							alt="Hubungi Admin"
+							class="w-36 h-36 rounded-full object-cover mx-auto mb-5 shadow-md border-4 border-white ring-2 ring-brand-lighter" />
+						<h3 class="text-base font-bold text-brand-darker mb-2">Hubungi Admin Care</h3>
+						<p class="text-xs text-slate-500 leading-relaxed">
+							Hubungi admin kami untuk konsultasi awal mengenai keluhan kesehatan Anda.
+						</p>
+					</div>
+
+					<!-- Step 2 -->
+					<div class="step-item text-center opacity-0 transform translate-y-10">
+						<img
+							src="./assets/images/doctor-consultation.jpg"
+							alt="Tentukan Layanan"
+							class="w-36 h-36 rounded-full object-cover mx-auto mb-5 shadow-md border-4 border-white ring-2 ring-brand-lighter" />
+						<h3 class="text-base font-bold text-brand-darker mb-2">Tentukan Layanan</h3>
+						<p class="text-xs text-slate-500 leading-relaxed">
+							Pilih jenis perawatan serta tentukan perawat medis yang paling cocok.
+						</p>
+					</div>
+
+					<!-- Step 3 -->
+					<div class="step-item text-center opacity-0 transform translate-y-10">
+						<img
+							src="./assets/images/hero-nurse.jpg"
+							alt="Pemeriksaan Medis"
+							class="w-36 h-36 rounded-full object-cover mx-auto mb-5 shadow-md border-4 border-white ring-2 ring-brand-lighter" />
+						<h3 class="text-base font-bold text-brand-darker mb-2">Pemeriksaan & Tindakan</h3>
+						<p class="text-xs text-slate-500 leading-relaxed">
+							Tenaga medis terlatih kami berkunjung langsung ke rumah melakukan tindakan medis.
+						</p>
+					</div>
+
+					<!-- Step 4 -->
+					<div class="step-item text-center opacity-0 transform translate-y-10">
+						<img
+							src="./assets/images/elderly-therapy.jpg"
+							alt="Pembayaran"
+							class="w-36 h-36 rounded-full object-cover mx-auto mb-5 shadow-md border-4 border-white ring-2 ring-brand-lighter" />
+						<h3 class="text-base font-bold text-brand-darker mb-2">Pembayaran & Evaluasi</h3>
+						<p class="text-xs text-slate-500 leading-relaxed">
+							Lakukan pembayaran secara non-tunai yang transparan beserta evaluasi berkala.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ======== TIM MEDIS ======== -->
+		<section id="dokter" class="py-24 bg-slate-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<div id="team-header" class="text-center mb-16 opacity-0 transform translate-y-10">
+					<span
+						class="inline-block bg-brand text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4"
+						>Tim Medis</span
+					>
+					<h2 class="text-3xl md:text-4xl font-extrabold text-brand-darker">Dokter & Perawat</h2>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<!-- Profile 1 -->
+					<div
+						class="team-card bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 opacity-0 transform translate-y-10">
+						<img
+							src="./assets/images/doctor-1.jpg"
+							alt="Dr. Ahmad Pratama"
+							class="w-full h-[250px] object-cover object-top border-b-4 border-brand-lighter" />
+						<div class="p-6 text-center">
+							<h3 class="text-lg font-bold text-brand-darker mb-1">Dr. Ahmad Pratama</h3>
+							<div class="text-sm font-semibold text-brand mb-3">Spesialis Penyakit Dalam</div>
+							<p class="text-xs text-slate-500 leading-relaxed">
+								Berpengalaman lebih dari 12 tahun dalam penanganan penyakit dalam kronis secara
+								komprehensif.
+							</p>
+						</div>
+					</div>
+
+					<!-- Profile 2 -->
+					<div
+						class="team-card bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 opacity-0 transform translate-y-10">
+						<img
+							src="./assets/images/doctor-2.jpg"
+							alt="Dr. Sari Wulandari"
+							class="w-full h-[250px] object-cover object-top border-b-4 border-brand-lighter" />
+						<div class="p-6 text-center">
+							<h3 class="text-lg font-bold text-brand-darker mb-1">Dr. Sari Wulandari</h3>
+							<div class="text-sm font-semibold text-brand mb-3">Spesialis Anak</div>
+							<p class="text-xs text-slate-500 leading-relaxed">
+								Fokus pada kesehatan anak, pendampingan tumbuh kembang balita, serta konsultasi
+								imunisasi rutin.
+							</p>
+						</div>
+					</div>
+
+					<!-- Profile 3 -->
+					<div
+						class="team-card bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 opacity-0 transform translate-y-10">
+						<img
+							src="./assets/images/doctor-3.jpg"
+							alt="Dr. Budi Santoso"
+							class="w-full h-[250px] object-cover object-top border-b-4 border-brand-lighter" />
+						<div class="p-6 text-center">
+							<h3 class="text-lg font-bold text-brand-darker mb-1">Dr. Budi Santoso</h3>
+							<div class="text-sm font-semibold text-brand mb-3">Spesialis Rehabilitasi Medik</div>
+							<p class="text-xs text-slate-500 leading-relaxed">
+								Ahli dalam pemulihan fisik, fisioterapi pasca cedera berat, stroke, serta
+								mengembalikan mobilitas gerak.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ======== SERVICE EXCELLENT (TESTIMONI) ======== -->
+		<section id="testimoni" class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div id="testi-header" class="text-center mb-16 opacity-0 transform translate-y-10">
+					<span
+						class="inline-block bg-brand text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4"
+						>Tanggapan Mereka</span
+					>
+					<h2 class="text-3xl md:text-4xl font-extrabold text-brand-darker">Service Excellent</h2>
+				</div>
+
+				<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+					<!-- Testimonial 1 -->
+					<div
+						class="testi-card bg-slate-50 rounded-2xl p-8 border border-slate-100 opacity-0 transform translate-y-10">
+						<span class="text-sm font-bold text-brand mb-3 block">Mitra</span>
+						<p class="text-sm text-slate-600 leading-relaxed italic">
+							"Pelayanan luar biasa cepat. Admin ramah dan perawat medis sangat terapis saat
+							menangani pemulihan stroke ayah saya."
+						</p>
+					</div>
+
+					<!-- Testimonial 2 -->
+					<div
+						class="testi-card bg-slate-50 rounded-2xl p-8 border border-slate-100 opacity-0 transform translate-y-10">
+						<span class="text-sm font-bold text-brand mb-3 block">Nyaman & Aman</span>
+						<p class="text-sm text-slate-600 leading-relaxed italic">
+							"Sangat bersyukur ada layanan ini. Kami tidak perlu bolak-balik ke rumah sakit karena
+							bidan dan perawat datang langsung."
+						</p>
+					</div>
+
+					<!-- Testimonial 3 -->
+					<div
+						class="testi-card bg-slate-50 rounded-2xl p-8 border border-slate-100 opacity-0 transform translate-y-10">
+						<span class="text-sm font-bold text-brand mb-3 block">Empati</span>
+						<p class="text-sm text-slate-600 leading-relaxed italic">
+							"Dokter pendampingan lansia sangat sabar dan telaten membimbing kakek kami melakukan
+							latihan fisik ringan setiap pagi."
+						</p>
+					</div>
+
+					<!-- Testimonial 4 -->
+					<div
+						class="testi-card bg-slate-50 rounded-2xl p-8 border border-slate-100 opacity-0 transform translate-y-10">
+						<span class="text-sm font-bold text-brand mb-3 block">Respon Cepat</span>
+						<p class="text-sm text-slate-600 leading-relaxed italic">
+							"Tim medis datang sangat cepat ketika kami butuh tindakan medis darurat di hari libur.
+							Layanan terpercaya!"
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ======== FOOTER ======== -->
+		<footer
+			id="footer"
+			class="bg-brand text-slate-300 pt-20 pb-8 border-t-4 border-brand-light opacity-0">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="grid grid-cols-1 md:grid-cols-4 gap-12 pb-12 border-b border-slate-800">
+					<!-- Brand column -->
+					<div class="flex flex-col gap-4">
+						<h3 class="flex items-center gap-2 text-2xl font-extrabold text-white">
+							<img
+								src="./assets/images/FLYER TEMANI SEHAT footer.png"
+								alt="Care Logo"
+								class="object-contain" />
+						</h3>
+						<p class="text-sm text-slate-400 leading-relaxed max-w-xs">
+							Penyedia layanan home care dan pendampingan kesehatan keluarga terpercaya dengan
+							standar klinis yang tinggi.
+						</p>
+					</div>
+
+					<!-- Menu Utama -->
+					<div>
+						<h4 class="text-white font-bold text-base mb-5">Menu Utama</h4>
+						<ul class="flex flex-col gap-3 list-none">
+							<li><a href="#home" class="text-sm hover:text-white transition-colors">Home</a></li>
+							<li>
+								<a href="#layanan" class="text-sm hover:text-white transition-colors"
+									>Layanan kami</a
+								>
+							</li>
+							<li>
+								<a href="#tentang" class="text-sm hover:text-white transition-colors">Tentang</a>
+							</li>
+							<li>
+								<a href="#langkah" class="text-sm hover:text-white transition-colors"
+									>Langkah Pemesanan</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Layanan Kami -->
+					<div>
+						<h4 class="text-white font-bold text-base mb-5">Layanan Kami</h4>
+						<ul class="flex flex-col gap-3 list-none">
+							<li>
+								<a href="#layanan" class="text-sm hover:text-white transition-colors"
+									>Keperawatan</a
+								>
+							</li>
+							<li>
+								<a href="#layanan" class="text-sm hover:text-white transition-colors"
+									>Bidan & Ibu-Anak</a
+								>
+							</li>
+							<li>
+								<a href="#layanan" class="text-sm hover:text-white transition-colors"
+									>Fisioterapi</a
+								>
+							</li>
+							<li>
+								<a href="#layanan" class="text-sm hover:text-white transition-colors"
+									>Tumbuh Kembang</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Hubungi Kami -->
+					<div>
+						<h4 class="text-white font-bold text-base mb-5">Hubungi Kami</h4>
+						<ul class="flex flex-col gap-3 list-none text-sm text-slate-400">
+							<li>
+								<a href="tel:+6281234567890" class="hover:text-white transition-colors"
+									>+62 812-3456-7890</a
+								>
+							</li>
+							<li>
+								<a href="mailto:info@care.id" class="hover:text-white transition-colors"
+									>info@care.id</a
+								>
+							</li>
+							<li>Jl. Kesehatan Raya No. 12, Jakarta</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="pt-8 flex flex-wrap justify-between items-center gap-4 text-xs text-slate-500">
+					<p>&copy; 2026 Care. Semua hak dilindungi.</p>
+					<p>Layanan Kesehatan Rumah Keluarga Terpercaya</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- ======== GSAP ANIMATIONS & SCRIPTS ======== -->
+		<!-- GSAP Core & ScrollTrigger -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+		<script>
+			// Initialize GSAP ScrollTrigger
+			gsap.registerPlugin(ScrollTrigger);
+
+			// Page Load Entrance Animations
+			window.addEventListener('DOMContentLoaded', () => {
+			  // Navbar slide-down
+			  gsap.to('#navbar', {
+			    y: 0,
+			    duration: 0.8,
+			    ease: 'power3.out'
+			  });
+
+			  // Hero image zoom and fade-in
+			  gsap.to('#hero-image', {
+			    opacity: 1,
+			    scale: 1,
+			    duration: 1.2,
+			    ease: 'power4.out',
+			    delay: 0.2
+			  });
+
+			  // Hero overlap cards slide-up stagger
+			  gsap.to('.hero-card', {
+			    opacity: 1,
+			    y: 0,
+			    stagger: 0.15,
+			    duration: 0.8,
+			    ease: 'power3.out',
+			    delay: 0.5
+			  });
+			});
+
+			// About Section Scroll Trigger
+			gsap.to('#about-img-box', {
+			  scrollTrigger: {
+			    trigger: '#tentang',
+			    start: 'top 80%',
+			  },
+			  opacity: 1,
+			  x: 0,
+			  duration: 1,
+			  ease: 'power3.out'
+			});
+
+			gsap.to('#about-text-box', {
+			  scrollTrigger: {
+			    trigger: '#tentang',
+			    start: 'top 80%',
+			  },
+			  opacity: 1,
+			  x: 0,
+			  duration: 1,
+			  ease: 'power3.out',
+			  delay: 0.2
+			});
+
+			// Services Section Scroll Trigger
+			gsap.to('#services-header', {
+			  scrollTrigger: {
+			    trigger: '#layanan',
+			    start: 'top 85%',
+			  },
+			  opacity: 1,
+			  y: 0,
+			  duration: 0.8,
+			  ease: 'power3.out'
+			});
+
+			gsap.to('.service-item', {
+			  scrollTrigger: {
+			    trigger: '#layanan',
+			    start: 'top 75%',
+			  },
+			  opacity: 1,
+			  y: 0,
+			  stagger: 0.12,
+			  duration: 0.8,
+			  ease: 'power3.out'
+			});
+
+			// Steps Section Scroll Trigger
+			gsap.to('#steps-header', {
+			  scrollTrigger: {
+			    trigger: '#langkah',
+			    start: 'top 85%',
+			  },
+			  opacity: 1,
+			  y: 0,
+			  duration: 0.8,
+			  ease: 'power3.out'
+			});
+
+			gsap.to('.step-item', {
+			  scrollTrigger: {
+			    trigger: '#langkah',
+			    start: 'top 75%',
+			  },
+			  opacity: 1,
+			  y: 0,
+			  stagger: 0.15,
+			  duration: 0.8,
+			  ease: 'power3.out'
+			});
+
+			// Team Section Scroll Trigger
+			gsap.to('#team-header', {
+			  scrollTrigger: {
+			    trigger: '#dokter',
+			    start: 'top 85%',
+			  },
+			  opacity: 1,
+			  y: 0,
+			  duration: 0.8,
+			  ease: 'power3.out'
+			});
+
+			gsap.to('.team-card', {
+			  scrollTrigger: {
+			    trigger: '#dokter',
+			    start: 'top 75%',
+			  },
+			  opacity: 1,
+			  y: 0,
+			  stagger: 0.15,
+			  duration: 0.8,
+			  ease: 'power3.out'
+			});
+
+			// Testimonials Section Scroll Trigger
+			gsap.to('#testi-header', {
+			  scrollTrigger: {
+			    trigger: '#testimoni',
+			    start: 'top 85%',
+			  },
+			  opacity: 1,
+			  y: 0,
+			  duration: 0.8,
+			  ease: 'power3.out'
+			});
+
+			gsap.to('.testi-card', {
+			  scrollTrigger: {
+			    trigger: '#testimoni',
+			    start: 'top 75%',
+			  },
+			  opacity: 1,
+			  y: 0,
+			  stagger: 0.12,
+			  duration: 0.8,
+			  ease: 'power3.out'
+			});
+
+			// Footer Scroll Trigger
+			gsap.to('#footer', {
+			  scrollTrigger: {
+			    trigger: '#footer',
+			    start: 'top 90%',
+			  },
+			  opacity: 1,
+			  duration: 1,
+			  ease: 'power2.out'
+			});
+
+			// Mobile Menu Toggle logic
+			const mobileToggle = document.getElementById('mobile-toggle');
+			const mobileMenu = document.getElementById('mobile-menu');
+
+			mobileToggle.addEventListener('click', () => {
+			  const isOpen = mobileMenu.classList.contains('scale-y-100');
+			  if (isOpen) {
+			    mobileMenu.classList.remove('scale-y-100', 'opacity-100', 'pointer-events-all');
+			    mobileMenu.classList.add('scale-y-0', 'opacity-0', 'pointer-events-none');
+			  } else {
+			    mobileMenu.classList.remove('scale-y-0', 'opacity-0', 'pointer-events-none');
+			    mobileMenu.classList.add('scale-y-100', 'opacity-100', 'pointer-events-all');
+			  }
+			});
+
+			// Close menu when link clicked
+			document.querySelectorAll('#mobile-menu a').forEach(link => {
+			  link.addEventListener('click', () => {
+			    mobileMenu.classList.remove('scale-y-100', 'opacity-100', 'pointer-events-all');
+			    mobileMenu.classList.add('scale-y-0', 'opacity-0', 'pointer-events-none');
+			  });
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+/* Global styles to complement Tailwind CSS and handle scroll effects */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar on transition elements to prevent layouts jump during animations */
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
